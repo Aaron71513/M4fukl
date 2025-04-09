@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark 4 HUD</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(0, 173, 239, 0.15);
+            color: white;
+            overflow: hidden;
+        }
+        .hud-container {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .section {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="hud-container">
+        <div class="section" id="time">Time: --:--</div>
+        <div class="section" id="weather">Weather: Loading...</div>
+        <div class="section" id="email-summary">Email Summary: Loading...</div>
+        <div class="section" id="spotify-status">Spotify: Paused</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
